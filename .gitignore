@@ -5,5 +5,6 @@ DSTA/runs/
 DSTA/tmp/
 DSTA/__pycache__/
 prepare/
+.DS_Store/
 *.pyc
 
