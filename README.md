@@ -74,7 +74,9 @@ h5py=3.1.0
 torch
 ```
 
-Run `demo.py` after getting score.npy for each cues (DSTA, object, scene, action), here is an example to get topK (K=3) matched subtitles for a given video (videoID=0), you may also change fusion weights as you want:
+Run `demo.py` after getting score.npy for each cues (DSTA, object, scene, action), here is an example to get topK (K=3) matched subtitles for a given video (videoID=0), you may also change fusion weights as you want. 
+
+The pretrained `score.npy` and `test_embs/` can be found in our data [[download link]]().
 
 ```
 python demo.py \
