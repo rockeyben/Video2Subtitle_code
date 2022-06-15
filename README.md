@@ -11,7 +11,7 @@ Implementaion code for "Video2Subtitle: Matching Weakly-Synchronized Sequences v
     <source src="https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_g.m4v" type="video/mp4">
 </video> -->
 
-!()[https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_o.m4v]
+!()[https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_o_0.25.gif]
 
 
 ## Data
