@@ -2,14 +2,16 @@
 
 Implementaion code for "Video2Subtitle: Matching Weakly-Synchronized Sequences via Dynamic Temporal Alignment" (ICMR 2022)
 
-## Subtitle re-generation demo
 
+<iframe src="https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_o.m4v" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
+<iframe src="https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_g.m4v" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-<!-- <iframe src="assets/case1_o.m4v" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+## Train & Test
 
-<iframe src="assets/case1_g.m4v" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
+Please go to `DSTA/` and `GSM/` folder to conduct their training procedure.
 
+## Fusion & Subtitle re-generation demo
 
 Requirements:
 ```
