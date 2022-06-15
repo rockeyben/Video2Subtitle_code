@@ -7,5 +7,6 @@ DSTA/tmp/
 DSTA/__pycache__/
 prepare/
 demo_results/
+.DS_Store/
 *.pyc
 

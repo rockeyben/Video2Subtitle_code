@@ -205,7 +205,6 @@ def validate(opt, val_loader, model):
         cost, n_captions=opt.n_caption)
     logging.info("Text to image: %.1f, %.1f, %.1f, %.1f, %.1f" %
                  (r1i, r5i, r10i, medri, meanr))
-
     currscore = r1 + r5 + r10 + r1i + r5i + r10i
 
     # record metrics in tensorboard
@@ -218,7 +217,7 @@ def validate(opt, val_loader, model):
     tb_logger.log_value('r5i', r5i, step=model.Eiters)
     tb_logger.log_value('r10i', r10i, step=model.Eiters)
     tb_logger.log_value('medri', medri, step=model.Eiters)
-    tb_logger.log_value('meanr', meanr, step=model.Eiters)
+    tb_logger.log_value('meanri', meanri, step=model.Eiters)
     tb_logger.log_value('rsum', currscore, step=model.Eiters)
 
     return currscore
