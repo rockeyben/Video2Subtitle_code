@@ -12,7 +12,7 @@ Implementaion code for "Video2Subtitle: Matching Weakly-Synchronized Sequences v
 </video> -->
 
 Original subtitle:
-![original](https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_o_0.25.gif)
+![original](assets/case1_o_0.25.gif)
 
 Re-generated subtitle:
 ![generated](https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_g_0.25.gif)
