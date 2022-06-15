@@ -3,13 +3,15 @@
 Implementaion code for "Video2Subtitle: Matching Weakly-Synchronized Sequences via Dynamic Temporal Alignment" (ICMR 2022)
 
 
-<video width="320" height="240" controls>
+<!-- <video width="320" height="240" controls>
     <source src="https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_o.m4v" type="video/mp4">
 </video>
 
 <video width="320" height="240" controls>
     <source src="https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_g.m4v" type="video/mp4">
-</video>
+</video> -->
+
+!()[https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_o.m4v]
 
 
 ## Data
