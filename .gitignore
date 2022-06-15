@@ -1,0 +1,11 @@
+GSM/.vector_cache
+GSM/runs/
+GSM/__pycache__/
+GSM/score/
+DSTA/runs/
+DSTA/tmp/
+DSTA/__pycache__/
+prepare/
+demo_results/
+*.pyc
+
