@@ -2,48 +2,19 @@
 
 Implementaion code for "Video2Subtitle: Matching Weakly-Synchronized Sequences via Dynamic Temporal Alignment" (ICMR 2022)
 
-```HTML
-<iframe src="https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_o.m4v" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-<iframe src="https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_g.m4v" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-```
+<video width="320" height="240" controls>
+    <source src="https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_o.m4v" type="video/mp4">
+</video>
 
-## Train & Test
+<video width="320" height="240" controls>
+    <source src="https://github.com/rockeyben/Video2Subtitle_code/tree/main/assets/case1_g.m4v" type="video/mp4">
+</video>
 
-Please go to `DSTA/` and `GSM/` folder to conduct their training procedure.
 
-## Fusion & Subtitle re-generation demo
+## Data
 
-Requirements:
-```
-python=3.6.13
-cv2=4.5.3
-csv=1.0
-json=2.0.9
-h5py=3.1.0
-torch
-```
-
-Run `demo.py` after getting score.npy for each cues (DSTA, object, scene, action), here is an example to get topK (K=3) matched subtitles for a given video (videoID=0), you may also change fusion weights as you want:
-
-```
-python demo.py \
-    --data-name youtube \
-    --data-path /path/to/Video2Subtitle \
-    --dsta DSTA/runs/check_youtube/score.npy \
-    --dsta-embs DSTA/runs/check_youtube/test_embs \
-    --object GSM/score/gsm_youtube_object.npy \
-    --scene GSM/score/gsm_youtube_scene.npy \
-    --action GSM/score/gsm_youtube_action.npy \
-    --w_d 10.0 \
-    --w_o 1.0 \
-    --w_s 1.0 \
-    --w_a 1.0 \
-    --test-id 0 \
-    --K 3
-``` 
- 
-## Data structure
+Please use this link to download our dataset: [[download link]]()
 
 ```
 Video2Subtitle/
@@ -82,5 +53,38 @@ Video2Subtitle/
 - `test_ids.txt` : testing video ids for fusion
 - `video_info.json` : dict, (video_id, [video_name, FPS, duration])
 
+## Train & Test
 
+Please go to `DSTA/` and `GSM/` folder to conduct their training procedure.
 
+## Fusion & Subtitle re-generation demo
+
+Requirements:
+```
+python=3.6.13
+cv2=4.5.3
+csv=1.0
+json=2.0.9
+h5py=3.1.0
+torch
+```
+
+Run `demo.py` after getting score.npy for each cues (DSTA, object, scene, action), here is an example to get topK (K=3) matched subtitles for a given video (videoID=0), you may also change fusion weights as you want:
+
+```
+python demo.py \
+    --data-name youtube \
+    --data-path /path/to/Video2Subtitle \
+    --dsta DSTA/runs/check_youtube/score.npy \
+    --dsta-embs DSTA/runs/check_youtube/test_embs \
+    --object GSM/score/gsm_youtube_object.npy \
+    --scene GSM/score/gsm_youtube_scene.npy \
+    --action GSM/score/gsm_youtube_action.npy \
+    --w_d 10.0 \
+    --w_o 1.0 \
+    --w_s 1.0 \
+    --w_a 1.0 \
+    --test-id 0 \
+    --K 3
+``` 
+ 
