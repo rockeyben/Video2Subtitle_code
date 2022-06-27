@@ -19,12 +19,12 @@ Implementaion code for "Video2Subtitle: Matching Weakly-Synchronized Sequences v
 
 ## Data
 
-Please use this link to download our dataset: [[download link]]()
+Please use this link to download our dataset: [[download link](code 7633)](https://pan.baidu.com/s/17SGZbjynpMZpfgY8dUby8w). Unzip the data and features in `movie/` and `youtube/`, then arrange the directories in such format:
 
 ```
 Video2Subtitle/
     
-    Movie/
+    movie/
         raw_video/
         lip/
         tts/
@@ -42,7 +42,7 @@ Video2Subtitle/
         test_ids.txt
         video_info.json
         
-    Youtube/
+    youtube/
         ...
 ```
 
@@ -76,7 +76,7 @@ torch
 
 Run `demo.py` after getting score.npy for each cues (DSTA, object, scene, action), here is an example to get topK (K=3) matched subtitles for a given video (videoID=0), you may also change fusion weights as you want. 
 
-The pretrained `score.npy` and `test_embs/` can be found in our data [[download link]]().
+The pretrained model weights can be found in `pretrained_models/` in [[download link](code 7633)](https://pan.baidu.com/s/17SGZbjynpMZpfgY8dUby8w).
 
 ```
 python demo.py \
